@@ -4,6 +4,8 @@ Tech :
 
 - ReactJS
 - Bootstrap
+- Text To Speech use python
+- Speech To Text use react-speech-recognition
 
 ## Step by step
 
