@@ -15,6 +15,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Main = () => {
+  // Ubah API sesuai dengan kebutuhan
+  const TTS_API = "http://localhost:8000/tts";
+  
   const [text, setText] = useState("");
   const [language, setLanguage] = useState("en");
   const [audioUrl, setAudioUrl] = useState("");
@@ -45,7 +48,7 @@ const Main = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/tts",
+        TTS_API,
         { text, language },
         { responseType: "blob" }
       );
